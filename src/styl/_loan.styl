@@ -1,0 +1,139 @@
+.hidden
+  position: absolute
+  visibility: hidden
+  width: 0
+  height: 0
+
+.loan__content
+  padding: 32px
+  background-image: linear-gradient(-180deg, #05307C 0%, #011953 100%)
+  border: 1px solid desaturate($color-red, 60%)
+  border-radius: 5px
+
+.loan__text
+  @extend .main-text
+  color: $color-white
+  margin-bottom: 24px
+
+.loan__text--colored
+  color: $color-red
+  margin-bottom: 0
+
+.loan__text--title
+  text-transform: uppercase
+  font-weight: 600
+  font-size: 12px
+
+.loan__text--info
+  font-style: italic
+
+.loan__rates
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: flex-end
+  flex-wrap: wrap
+  opacity: 0
+  transition: opacity 1.35s ease-in
+
+.loan__rate-tooltip
+  visibility: hidden
+  position: absolute
+  top: 0
+  left: 15px
+  padding: 1px
+  background: $color-red
+  border-radius: 4px
+  margin-bottom: 27px
+  &:after
+    position: absolute
+    content: ''
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -6px
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 6px solid $color-red
+
+  +respond-to($xsmall)
+    left: 9px
+
+.loan__rate-tooltip--visible
+  visibility: visible
+
+.loan__rate-tooltip-interest
+  background: $color-white
+  color: #0a3a82
+  font-size: 14px
+  line-height: 18px
+  font-weight: 600
+  text-align: center
+
+.loan__rate-tooltip-payout
+  color: #f02e2d
+  font-size: 10px
+  line-height: 13px
+  font-weight: 600
+  text-align: center
+
+.loan__coins
+  display: flex
+  flex-direction: column-reverse
+
+.loan__rate
+  width: 49px
+  position: relative
+  padding-left: 19px
+  padding-top: 60px
+  box-sizing: border-box
+  margin-right: 14px
+  opacity: 1
+  transition: opacity 1.3s
+
+  +respond-between($medium, $large)
+    &:nth-child(17n)
+      margin-right: 0
+
+  +respond-between($small, $medium)
+    &:nth-child(13n)
+      margin-right: 0
+
+  +respond-between($xsmall, $small)
+    width: 42px
+    &:nth-child(11n)
+      margin-right: 0
+
+  +respond-to($xsmall)
+    width: 42px
+    padding-left: 13px
+
+  +respond-to($xxsmall)
+    &:nth-child(4n)
+      margin-right: 0
+
+.loan__rate-state
+  position: absolute
+  width: 100px
+  left: -40px
+  bottom: 75px
+  transform: rotate(-90deg)
+  color: $color-white
+  font-size: 10px
+  line-height: 13px
+  text-transform: uppercase
+  font-weight: 600
+  +respond-to($xsmall)
+    left: -45px
+
+.loan__coins-img
+  transition: .5s
+  margin-top: -7px
+  position: absolute
+  will-change: transform
+
+.loan__rate-rank
+  margin-top: 7px
+  text-align: center
+  color: #87c9fb

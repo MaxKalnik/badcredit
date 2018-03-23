@@ -1,0 +1,46 @@
+.tips
+  width: 720px
+  margin: 45px auto 0 auto
+  +respond-from($large)
+    width: 830px
+
+  +respond-to($small)
+    width: 450px
+
+  +respond-to($xsmall)
+    width: 100%
+
+.tips__item
+  margin-bottom: 45px
+  &:last-child
+    margin-bottom: 0
+
+  +respond-to($xsmall)
+    margin-bottom: 32px
+
+.tips__under-title
+  @extend .main-text
+  font-size: 16px
+
+.tips__item-title
+  font-size: 24px
+  line-height: 32px
+  font-weight: 600
+  margin-bottom: 16px
+
+.tips__item-text
+  font-size: 14px
+  line-height: 26px
+  font-weight: 400
+  margin-bottom: 16px
+  &:last-of-type
+    margin-bottom: 0
+
+  a
+    @extend .main-link
+
+.tips__item-card-link
+  @extend .main-link
+  font-size: 14px
+  line-height: 26px
+  font-weight: 300

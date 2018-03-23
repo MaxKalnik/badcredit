@@ -1,0 +1,106 @@
+@import "virtual/_variable.styl"
+
+.header-post
+  background-color: #0073aa
+  height: 229px
+  border-radius: 4px 4px 0 0
+  margin-top: 48px
+  margin-left: 40px
+  margin-right: 40px
+  padding-left: 24px
+
+.header-post__img
+  display: block
+  width: 530px
+  height: 100%
+  background-size cover
+  background-position top center
+  padding-top: 34px
+  margin-top: -34px
+  float: left
+  margin-right: 75px
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.20)
+  border-radius: 4px 4px 0 0
+
+.header-post__text
+  $ultraThin()
+  font-weight: 300
+  font-size: 32px
+  color: #FFFFFF
+  letter-spacing: 0
+  line-height: 40px
+  padding-bottom: 32px
+  padding-top: 36px
+  max-width 94%
+
+.header-post__link
+  $ultraThin()
+  width: 204px
+  height: 60px
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1)
+  border-radius: 3px
+  background-color: #fff
+  color: #0091d9
+  font-size: 13px
+  font-weight: 600
+  text-transform: uppercase
+  line-height: 60px
+  text-align: center
+  display: inline-block
+  i
+    position: relative
+    left: 0
+    transition: all .1s linear
+  &:hover
+    i
+      left: 3px
+      transition: all .1s linear
+
+@media (max-width: 1370px)
+  .header-post__img
+    width: 440px
+    margin-right: 40px
+
+  .header-post__text
+    font-size 26px
+
+@media (max-width: 1019px)
+
+  .header-post
+    padding: 0
+    margin-left: 20px
+    margin-right: 20px
+
+  .header-post__img
+    width: 340px
+    margin-right: 20px
+
+  .header-post__text
+    font-size 24px
+    max-width 98%
+
+@media (max-width: 759px)
+  .header-post__img
+    width: 260px
+    height: 170px
+    float none
+    padding: 0
+    margin: 0 auto
+
+  .header-post__link
+    height: 35px
+    line-height: 35px
+    margin: 0 auto
+
+  .header-post__text
+    text-align: center
+    font-size: 12px
+    padding: 15px 0
+    max-width 100%
+    line-height 1em
+
+  .header-post
+    margin: 0 8px
+    padding: 20px 0
+    text-align center
+    height: 250px

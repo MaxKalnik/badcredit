@@ -1,0 +1,361 @@
+-
+  var loanValues = [
+   {
+     rank: 1,
+     state: "Indiana",
+     interestRate: "21%",
+     payout: "$59,979",
+     coins: 21
+   },
+   {
+     rank: 2,
+     state: "Rhode Island",
+     interestRate: "21%",
+     payout: "$59,979",
+     coins: 21
+   },
+   {
+     rank: 3,
+     state: "New Jersey",
+     interestRate: "16%",
+     payout: "$50,254",
+     coins: 16
+   },
+   {
+     rank: 4,
+     state: "New York",
+     interestRate: "16%",
+     payout: "$50,254",
+     coins: 16
+   },
+   {
+     rank: 5,
+     state: "Montana",
+     interestRate: "15%",
+     payout: "$48,400",
+     coins: 15
+   },
+   {
+     rank: 6,
+     state: "New Mexico",
+     interestRate: "15%",
+     payout: "$48,400",
+     coins: 15
+   },
+   {
+     rank: 7,
+     state: "South Dakota",
+     interestRate: "15%",
+     payout: "$48,400",
+     coins: 15
+   },
+   {
+     rank: 8,
+     state: "Colorado",
+     interestRate: "12%",
+     payout: "$43,041",
+     coins: 12
+   },
+   {
+     rank: 9,
+     state: "Connecticut",
+     interestRate: "12%",
+     payout: "$43,041",
+     coins: 12
+   },
+   {
+     rank: 10,
+     state: "Idaho",
+     interestRate: "12%",
+     payout: "$43,041",
+     coins: 12
+   },
+   {
+     rank: 11,
+     state: "Louisiana",
+     interestRate: "12%",
+     payout: "$43,041",
+     coins: 12
+   },
+   {
+     rank: 12,
+     state: "Vermont",
+     interestRate: "12%",
+     payout: "$43,041",
+     coins: 12
+   },
+   {
+     rank: 13,
+     state: "Washington",
+     interestRate: "12%",
+     payout: "$43,041",
+     coins: 12
+   },
+   {
+     rank: 14,
+     state: "Alaska",
+     interestRate: "10,5%",
+     payout: "$40,481",
+     coins: 10
+   },
+   {
+     rank: 15,
+     state: "Arizona",
+     interestRate: "10%",
+     payout: "$39,645",
+     coins: 10
+   },
+   {
+     rank: 16,
+     state: "Florida",
+     interestRate: "10%",
+     payout: "$39,645",
+     coins: 10
+   },
+   {
+     rank: 17,
+     state: "Hawaii",
+     interestRate: "10%",
+     payout: "$39,645",
+     coins: 10
+   },
+   {
+     rank: 18,
+     state: "Kansas",
+     interestRate: "10%",
+     payout: "$39,645",
+     coins: 10
+   },
+   {
+     rank: 19,
+     state: "New Hampshire",
+     interestRate: "10%",
+     payout: "$39,645",
+     coins: 10
+   },
+   {
+     rank: 20,
+     state: "Tennessee",
+     interestRate: "10%",
+     payout: "$39,645",
+     coins: 10
+   },
+   {
+     rank: 21,
+     state: "Utah",
+     interestRate: "10%",
+     payout: "$39,645",
+     coins: 10
+   },
+   {
+     rank: 22,
+     state: "Missouri",
+     interestRate: "9%",
+     payout: "$38,003",
+     coins: 9
+   },
+   {
+     rank: 23,
+     state: "Oregon",
+     interestRate: "9%",
+     payout: "$38,003",
+     coins: 9
+   },
+   {
+     rank: 24,
+     state: "South Carolina",
+     interestRate: "8,75%",
+     payout: "$37,598",
+     coins: 9
+   },
+   {
+     rank: 25,
+     state: "Kentucky",
+     interestRate: "8%",
+     payout: "$36,398",
+     coins: 8
+   },
+   {
+     rank: 26,
+     state: "Maryland",
+     interestRate: "8%",
+     payout: "$36,398",
+     coins: 8
+   },
+   {
+     rank: 27,
+     state: "Minnesota",
+     interestRate: "8%",
+     payout: "$36,398",
+     coins: 8
+   },
+   {
+     rank: 28,
+     state: "Mississippi",
+     interestRate: "8%",
+     payout: "$36,398",
+     coins: 8
+   },
+   {
+     rank: 29,
+     state: "North Carolina",
+     interestRate: "8%",
+     payout: "$36,398",
+     coins: 8
+   },
+   {
+     rank: 30,
+     state: "Ohio",
+     interestRate: "8%",
+     payout: "$36,398",
+     coins: 8
+   },
+   {
+     rank: 31,
+     state: "Virginia",
+     interestRate: "8%",
+     payout: "$36,398",
+     coins: 8
+   },
+   {
+     rank: 32,
+     state: "West Virginia",
+     interestRate: "8%",
+     payout: "$36,398",
+     coins: 8
+   },
+   {
+     rank: 33,
+     state: "Arkansas",
+     interestRate: "7%",
+     payout: "$34,833",
+     coins: 7
+   },
+   {
+     rank: 34,
+     state: "California",
+     interestRate: "7%",
+     payout: "$34,833",
+     coins: 7
+   },
+   {
+     rank: 35,
+     state: "Georgia",
+     interestRate: "7%",
+     payout: "$34,833",
+     coins: 7
+   },
+   {
+     rank: 36,
+     state: "Michigan",
+     interestRate: "7%",
+     payout: "$34,833",
+     coins: 7
+   },
+   {
+     rank: 37,
+     state: "Wyoming",
+     interestRate: "7%",
+     payout: "$34,833",
+     coins: 7
+   },
+   {
+     rank: 38,
+     state: "Alabama",
+     interestRate: "6%",
+     payout: "$33,306",
+     coins: 6
+   },
+   {
+     rank: 39,
+     state: "Maine",
+     interestRate: "6%",
+     payout: "$33,306",
+     coins: 6
+   },
+   {
+     rank: 40,
+     state: "Massachusetts",
+     interestRate: "6%",
+     payout: "$33,306",
+     coins: 6
+   },
+   {
+     rank: 41,
+     state: "Nebraska",
+     interestRate: "6%",
+     payout: "$33,306",
+     coins: 6
+   },
+   {
+     rank: 42,
+     state: "North Dakota",
+     interestRate: "6%",
+     payout: "$33,306",
+     coins: 6
+   },
+   {
+     rank: 43,
+     state: "Oklahoma",
+     interestRate: "6%",
+     payout: "$33,306",
+     coins: 6
+   },
+   {
+     rank: 44,
+     state: "Pennsylvania",
+     interestRate: "6%",
+     payout: "$33,306",
+     coins: 6
+   },
+   {
+     rank: 45,
+     state: "Texas",
+     interestRate: "6%",
+     payout: "$33,306",
+     coins: 6
+   },
+   {
+     rank: 46,
+     state: "Washington D.C.",
+     interestRate: "6%",
+     payout: "$33,306",
+     coins: 6
+   },
+   {
+     rank: 47,
+     state: "Delaware",
+     interestRate: "5,5%",
+     payout: "$32,558",
+     coins: 6
+   },
+   {
+     rank: 48,
+     state: "Nevada",
+     interestRate: "5,25%",
+     payout: "$32,188",
+     coins: 5
+   },
+   {
+     rank: 49,
+     state: "Illinois",
+     interestRate: "5%",
+     payout: "$31,820",
+     coins: 5
+   },
+   {
+     rank: 50,
+     state: "Iowa",
+     interestRate: "5%",
+     payout: "$31,820",
+     coins: 5
+   },
+   {
+     rank: 51,
+     state: "Wisconsin",
+     interestRate: "5%",
+     payout: "$31,820",
+     coins: 5
+   }
+  ]
+  var coinSrc = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANCAMAAAD/lpwuAAAAxlBMVEUAAADvl0jtlkj/2XnulkfulUf/2nj/2nr/3Hvtlkjulkf/2XjulUfulUj/2Xj/2Xnulkj/2Xnvlkn/2XjvmErznU7/44D8ym77x2v/2Hj/2Hntlkj/2Xj/2Hj/2HnulUjulkj/2HnulkfxmUr/2X3ul0vxnE7/2HjtlUfts1r90nP6yGzxul/inkj4wGb3u2LutVvzrFjumUr6zW/rsFf8zXD7ym75xGnzwGTwo1Hlo03gmkXelUH2xGj1tF71tF3pq1PoqVEugObCAAAAJ3RSTlMA7dhz3MaOYCj24tvNr5uVkoVuSUYTCe3l39O9rqqemJRpPTcvLCQyb70LAAAAwUlEQVQY043M1w6DMAxAUQNldO+9Z5ImYXcwuv7/p1pQVHioUM+bfS2DMDC6utLWmo1GU2sretcYQMZQ5lX04TEPZcYzZZdmfSI2hMecEN9GmeoaQPtOjPMnYVd6RDkLGKG8o3e7klfEGRKGULLyndi27YdRHIo3lgQl7DrmCeUxP80n03FxcpBwA+dumRdKz2dKL6b1cAI3DRJMcaEaHNTCvgeAbUv+XeXlBoR+r9Oqq3JFKmNcliqyWl91en34yxvnDzFtlFCnpAAAAABJRU5ErkJggg=='

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="8px" viewBox="0 0 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>check_mark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Featured-Credit-Cards-Section" transform="translate(-615.000000, -979.000000)">
+            <g id="Branded_Card_1020" transform="translate(280.000000, 768.000000)">
+                <g id="Content" transform="translate(328.000000, 32.000000)">
+                    <g id="Left_Section" transform="translate(0.000000, 72.000000)">
+                        <g id="check_mark" transform="translate(0.000000, 99.000000)">
+                            <g>
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                                <path d="M7.27484731,11.2821289 L7.27484731,11.2821289 C7.65241532,10.868441 8.25208218,10.868441 8.62965019,11.2699623 L10.6507496,13.4844109 L15.3814547,8.30114043 C15.7479178,7.89961986 16.3586896,7.89961986 16.7251527,8.30114043 L16.7251527,8.30114043 C17.0916158,8.70266173 17.0916158,9.37186268 16.7251527,9.77338399 L11.3059411,15.6988596 C10.9394781,16.1003801 10.3287063,16.1003801 9.96224319,15.6988596 L7.27484731,12.7543724 C6.90838423,12.3406845 6.90838423,11.6836502 7.27484731,11.2821289 L7.27484731,11.2821289 Z" id="Shape" fill="#008FD6" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

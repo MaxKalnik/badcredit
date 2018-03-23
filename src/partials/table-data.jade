@@ -1,0 +1,462 @@
+-
+  var values = [
+   {
+     state: "Alabama",
+     reRanking: 30,
+     cfpb: 470,
+     avIncome: "$60,511",
+     usuryRate: "6%",
+     agencies: 44,
+     livingIndex: "84.2"
+   },
+   {
+     state: "Alaska",
+     reRanking: 19,
+     cfpb: 310,
+     avIncome: "$89,746",
+     usuryRate: "10.5%",
+     agencies: 14,
+     livingIndex: "87.7"
+   },
+   {
+     state: "Arizona",
+     reRanking: 23,
+     cfpb: 351,
+     avIncome: "$68,297",
+     usuryRate: "10%",
+     agencies: 101,
+     livingIndex: "89"
+   },
+   {
+     state: "Arkansas",
+     reRanking: 6,
+     cfpb: 308,
+     avIncome: "$57,304",
+     usuryRate: "6%",
+     agencies: 32,
+     livingIndex: "89.2"
+   },
+   {
+     state: "California",
+     reRanking: 43,
+     cfpb: 591,
+     avIncome: "$87,877",
+     usuryRate: "7%",
+     agencies: 438,
+     livingIndex: "89.3"
+   },
+   {
+     state: "Colorado",
+     reRanking: 34,
+     cfpb: 540,
+     avIncome: "$81,635",
+     usuryRate: "8%",
+     agencies: 93,
+     livingIndex: "90"
+   },
+   {
+     state: "Connecticut",
+     reRanking: 31,
+     cfpb: 433,
+     avIncome: "$99,992",
+     usuryRate: "8%",
+     agencies: 37,
+     livingIndex: "90.1"
+   },
+   {
+     state: "Delaware",
+     reRanking: 16,
+     cfpb: 895,
+     avIncome: "$79,262",
+     usuryRate: "5.5%",
+     agencies: 29,
+     livingIndex: "90.2"
+   },
+   {
+     state: "Florida",
+     reRanking: 47,
+     cfpb: 817,
+     avIncome: "$67,975",
+     usuryRate: "10%",
+     agencies: 3,
+     livingIndex: "90.7"
+   },
+   {
+     state: "Georgia",
+     reRanking: 48,
+     cfpb: 866,
+     avIncome: "$69,010",
+     usuryRate: "7%",
+     agencies: 267,
+     livingIndex: "91.1"
+   },
+   {
+     state: "Hawaii",
+     reRanking: 35,
+     cfpb: 439,
+     avIncome: "$87,329",
+     usuryRate: "10%",
+     agencies: 149,
+     livingIndex: "91.6"
+   },
+   {
+     state: "Idaho",
+     reRanking: 25,
+     cfpb: 408,
+     avIncome: "$62,311",
+     usuryRate: "12%",
+     agencies: 14,
+     livingIndex: "91.7"
+   },
+   {
+     state: "Illinois",
+     reRanking: 14,
+     cfpb: 484,
+     avIncome: "$79,556",
+     usuryRate: "5%",
+     agencies: 30,
+     livingIndex: "92.3"
+   },
+   {
+     state: "Indiana",
+     reRanking: 11,
+     cfpb: 357,
+     avIncome: "$64,649",
+     usuryRate: "8%",
+     agencies: 181,
+     livingIndex: "92.5"
+   },
+   {
+     state: "Iowa",
+     reRanking: 1,
+     cfpb: 281,
+     avIncome: "$68,446",
+     usuryRate: "5%",
+     agencies: 97,
+     livingIndex: "92.5"
+   },
+   {
+     state: "Kansas",
+     reRanking: 7,
+     cfpb: 374,
+     avIncome: "$70,093",
+     usuryRate: "10%",
+     agencies: 17,
+     livingIndex: "93.3"
+   },
+   {
+     state: "Kentucky",
+     reRanking: 33,
+     cfpb: 362,
+     avIncome: "$60,031",
+     usuryRate: "8%",
+     agencies: 52,
+     livingIndex: "93.7"
+   },
+   {
+     state: "Louisiana",
+     reRanking: 39,
+     cfpb: 524,
+     avIncome: "$63,904",
+     usuryRate: "12%",
+     agencies: 51,
+     livingIndex: "93.9"
+   },
+   {
+     state: "Maine",
+     reRanking: 15,
+     cfpb: 397,
+     avIncome: "$64,985",
+     usuryRate: "6%",
+     agencies: 61,
+     livingIndex: "93.9"
+   },
+   {
+     state: "Maryland",
+     reRanking: 38,
+     cfpb: 754,
+     avIncome: "$97,801",
+     usuryRate: "6%",
+     agencies: 13,
+     livingIndex: "95.5"
+   },
+   {
+     state: "Massachusetts",
+     reRanking: 17,
+     cfpb: 323,
+     avIncome: "$94,143",
+     usuryRate: "6%",
+     agencies: 57,
+     livingIndex: "95.6"
+   },
+   {
+     state: "Michigan",
+     reRanking: 21,
+     cfpb: 417,
+     avIncome: "$66,760",
+     usuryRate: "5%",
+     agencies: 74,
+     livingIndex: "95.7"
+   },
+   {
+     state: "Minnesota",
+     reRanking: 2,
+     cfpb: 317,
+     avIncome: "$80,444",
+     usuryRate: "6%",
+     agencies: 86,
+     livingIndex: "96"
+   },
+   {
+     state: "Mississippi",
+     reRanking: 18,
+     cfpb: 370,
+     avIncome: "$54,906",
+     usuryRate: "8%",
+     agencies: 93,
+     livingIndex: "96.6"
+   },
+   {
+     state: "Missouri",
+     reRanking: 20,
+     cfpb: 444,
+     avIncome: "$65,312",
+     usuryRate: "9%",
+     agencies: 32,
+     livingIndex: "96.7"
+   },
+   {
+     state: "Montana",
+     reRanking: 29,
+     cfpb: 366,
+     avIncome: "$63,139",
+     usuryRate: "10%",
+     agencies: 78,
+     livingIndex: "96.8"
+   },
+   {
+     state: "Nebraska",
+     reRanking: 3,
+     cfpb: 357,
+     avIncome: "$69,392",
+     usuryRate: "6%",
+     agencies: 22,
+     livingIndex: "98.4"
+   },
+   {
+     state: "Nevada",
+     reRanking: 22,
+     cfpb: 809,
+     avIncome: "$69,150",
+     usuryRate: "5.25%",
+     agencies: 35,
+     livingIndex: "98.9"
+   },
+   {
+     state: "New Hampshire",
+     reRanking: 13,
+     cfpb: 410,
+     avIncome: "$85,727",
+     usuryRate: "10%",
+     agencies: 47,
+     livingIndex: "99"
+   },
+   {
+     state: "New Jersey",
+     reRanking: 42,
+     cfpb: 631,
+     avIncome: "$99,026",
+     usuryRate: "6%",
+     agencies: 20,
+     livingIndex: "99.9"
+   },
+   {
+     state: "New Mexico",
+     reRanking: 40,
+     cfpb: 457,
+     avIncome: "$62,215",
+     usuryRate: "15%",
+     agencies: 128,
+     livingIndex: "101.2"
+   },
+   {
+     state: "New York",
+     reRanking: 46,
+     cfpb: 504,
+     avIncome: "$86,825",
+     usuryRate: "16%",
+     agencies: 9,
+     livingIndex: "101.5"
+   },
+   {
+     state: "North Carolina",
+     reRanking: 37,
+     cfpb: 463,
+     avIncome: "$65,338",
+     usuryRate: "8%",
+     agencies: 483,
+     livingIndex: "101.9"
+   },
+   {
+     state: "North Dakota",
+     reRanking: 4,
+     cfpb: 278,
+     avIncome: "$76,185",
+     usuryRate: "6%",
+     agencies: 88,
+     livingIndex: "103.5"
+   },
+   {
+     state: "Ohio",
+     reRanking: 12,
+     cfpb: 512,
+     avIncome: "$66,409",
+     usuryRate: "5%",
+     agencies: 17,
+     livingIndex: "104"
+   },
+   {
+     state: "Oklahoma",
+     reRanking: 10,
+     cfpb: 413,
+     avIncome: "$63,890",
+     usuryRate: "6%",
+     agencies: 127,
+     livingIndex: "106.6"
+   },
+   {
+     state: "Oregon",
+     reRanking: 44,
+     cfpb: 496,
+     avIncome: "$69,040",
+     usuryRate: "9%",
+     agencies: 58,
+     livingIndex: "107.6"
+   },
+   {
+     state: "Pennsylvania",
+     reRanking: 27,
+     cfpb: 441,
+     avIncome: "$73,175",
+     usuryRate: "6%",
+     agencies: 70,
+     livingIndex: "113.5"
+   },
+   {
+     state: "Rhode Island",
+     reRanking: 41,
+     cfpb: 453,
+     avIncome: "$77,111",
+     usuryRate: "12%",
+     agencies: 173,
+     livingIndex: "113.7"
+   },
+   {
+     state: "South Carolina",
+     reRanking: 49,
+     cfpb: 585,
+     avIncome: "$61,987",
+     usuryRate: "8.75%",
+     agencies: 4,
+     livingIndex: "120.2"
+   },
+   {
+     state: "South Dakota",
+     reRanking: 24,
+     cfpb: 390,
+     avIncome: "$66,404",
+     usuryRate: "12%",
+     agencies: 48,
+     livingIndex: "120.5"
+   },
+   {
+     state: "Tennessee",
+     reRanking: 50,
+     cfpb: 544,
+     avIncome: "$63,339",
+     usuryRate: "10%",
+     agencies: 19,
+     livingIndex: "123"
+   },
+   {
+     state: "Texas",
+     reRanking: 45,
+     cfpb: 660,
+     avIncome: "$75,264",
+     usuryRate: "6%",
+     agencies: 71,
+     livingIndex: "124.9"
+   },
+   {
+     state: "Utah",
+     reRanking: 32,
+     cfpb: 382,
+     avIncome: "$76,531",
+     usuryRate: "10%",
+     agencies: 305,
+     livingIndex: "125.7"
+   },
+   {
+     state: "Vermont",
+     reRanking: 26,
+     cfpb: 305,
+     avIncome: "$71,392",
+     usuryRate: "12%",
+     agencies: 45,
+     livingIndex: "127.3"
+   },
+   {
+     state: "Virginia",
+     reRanking: 28,
+     cfpb: 596,
+     avIncome: "$88,955",
+     usuryRate: "6%",
+     agencies: 5,
+     livingIndex: "128.4"
+   },
+   {
+     state: "Washington",
+     reRanking: 51,
+     cfpb: 494,
+     avIncome: "$80,789",
+     usuryRate: "12%",
+     agencies: 76,
+     livingIndex: "131.9"
+   },
+   {
+     state: "Washington D.C",
+     reRanking: 36,
+     cfpb: 1210,
+     avIncome: "$107,594",
+     usuryRate: "6%",
+     agencies: 113,
+     livingIndex: "134.1"
+   },
+   {
+     state: "West Virginia",
+     reRanking: 8,
+     cfpb: 248,
+     avIncome: "$56,425",
+     usuryRate: "6%",
+     agencies: 11,
+     livingIndex: "140.5"
+   },
+   {
+     state: "Wisconsin",
+     reRanking: 5,
+     cfpb: 332,
+     avIncome: "$69,333",
+     usuryRate: "5%",
+     agencies: 55,
+     livingIndex: "157.4"
+   },
+   {
+     state: "Wyoming",
+     reRanking: 9,
+     cfpb: 347,
+     avIncome: "$73,477",
+     usuryRate: "7%",
+     agencies: 18,
+     livingIndex: "188.4"
+   }
+  ]

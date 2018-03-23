@@ -1,0 +1,86 @@
+button
+  font-family: Whitney SSm A, sans-serif
+
+.btn__container
+  display: flex
+  justify-content: center
+  margin-top: 32px
+
+  +respond-to($xsmall)
+    margin: 4px 12px 0 12px
+
+.btn-container.btn-container--under-table
+  margin-top: 32px
+  +respond-from($large)
+    margin-top: 42px
+
+.btn__main
+  display: inline-block
+  font-size: 12px
+  line-height: 26px
+  font-weight: 600
+  color: #0a3a82
+  text-transform: uppercase
+  border-radius: 5px
+  padding: 14px 24px
+  border: 1px solid $color-blue
+  cursor: pointer
+  box-sizing: border-box
+  transition: .25s ease-out
+  background: $color-white
+
+  .btn__main-text
+    border-bottom: 1px solid $color-blue
+
+  &:after
+    content: ''
+    display: inline-block
+    position: relative
+    top: 4px
+    width: 20px
+    height: 20px
+    margin-left: 10px
+    background: url('images/icons/btn-icon.svg') center no-repeat
+
+    +respond-to($xsmall)
+      display: none
+
+  &:hover
+    background: $color-blue
+    color: $color-white
+    border: 1px solid $color-white
+    &:after
+      background: url('images/icons/btn-icon-hover.svg') center no-repeat
+    .btn__main-text
+      border-bottom: 1px solid transparent
+
+  +respond-to($xsmall)
+    width: 100%
+    max-width: 300px
+    display: block
+    padding: 10px 12px
+    font-size: 10px
+    text-align: center
+    margin-top: 12px
+
+.btn__container--red
+  .btn__main
+    color: #f71413
+    border: 1px solid $color-red
+    background: #ffffff
+
+    .btn__main-text
+      border-bottom: 1px solid $color-red
+
+    &:after
+      background: url('images/icons/btn-icon-red.svg') center no-repeat
+
+    &:hover
+      background: $color-red
+      color: $color-white
+      border: 1px solid $color-white
+      &:after
+        background: url('images/icons/btn-icon-hover.svg') center no-repeat
+      .btn__main-text
+        border-bottom: 1px solid transparent
+

@@ -1,0 +1,68 @@
+.methodology__content
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  margin-bottom: 45px
+
+  +respond-to($medium)
+    margin-bottom: 30px
+
+  +respond-to($xsmall)
+    flex-direction: column
+    align-items: center
+    margin-bottom: 24px
+
+.methodology__img
+  position: relative
+  margin-right: 33px
+  top: 5px
+
+  +respond-to($xsmall)
+    margin-right: 0
+    margin-bottom: 24px
+
+.methodology__text-item
+  @extend .main-text
+  margin-bottom: 24px
+  &:last-child
+    margin-bottom: 0
+
+.methodology__sources--indicators
+  margin-bottom: 30px
+
+.methodology__sources
+  margin-left: 99px
+  +respond-to($xsmall)
+    margin-left: 0
+
+.methodology__sources-title
+  font-size: 18px
+  line-height: 20px
+  font-weight: 600
+  margin-bottom: 12px
+
+.methodology__sources-link
+  border-bottom: 1px solid #cbe4f0
+  cursor: pointer
+  color: #1e92cc
+  &:hover
+    border-bottom: 1px solid transparent
+
+.methodology__sources-list-item
+  position: relative
+  font-size: 14px
+  line-height: 26px
+  font-weight: 300
+  padding-left: 13px
+  font-style: italic
+  &:before
+    content: ''
+    width: 6px
+    height: 6px
+    position: absolute
+    left: 0
+    top: 10px
+    background: url(images/icons/methodology-bullet.svg) center no-repeat
+
+.methodology__sources-list-link
+  @extend .main-link

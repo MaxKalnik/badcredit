@@ -1,0 +1,39 @@
+include ./loan-data
+
+.hidden
+  <svg width="32" height="13" xmlns="http://www.w3.org/2000/svg"><g id="coin" fill="none" fill-rule="evenodd"><path d="M31.928 8.311V4.084a57.13 57.13 0 0 1-5.822 1.364c.222.043.222.043 0 0-3.33.6-6.701.9-10.071.9s-6.741-.3-10.072-.9c-.221.042-.221.042 0 0A57.18 57.18 0 0 1 .142 4.084v4.21h.004c0 .008-.003.014-.003.022 0 1.176 2.352 2.223 6.014 2.902 2.713.502 6.144.804 9.877.804 3.732 0 7.16-.3 9.873-.802 3.665-.68 6.018-1.728 6.018-2.904l-.002-.012.001.006.004.001" fill="#ED9547"/><path d="M31.925 4.089c0 2.048-7.115 3.707-15.89 3.707C7.257 7.796.143 6.137.143 4.09c0-2.047 7.114-3.706 15.89-3.706s15.89 1.659 15.89 3.706" fill="#FFD878"/><path d="M19.597 6.432l-1.012-.584c-1.649-.002-3.514-.102-4.734-.243l-.141-.303.183-.08c1.23.133 2.865.238 4.43.232 1.984-.006 2.89-.25 2.282-.583-.586-.32-2.003-.513-4.31-.674-3.134-.21-5.25-.46-6.064-.956-.777-.474.136-.853 2.328-.972l-1.16-.5.144-.084 1.547-.024 1.003.563c1.543-.009 2.757.07 3.68.16l.077.396s-.13.08-.193.075c-.71-.066-1.903-.254-3.412-.234-1.977.024-2.274.298-1.883.528.506.298 1.738.439 4.412.628 3.194.223 5.162.518 6.146 1.041.873.465.141.904-2.585 1.01l1.072.604-.2.071-1.61-.071z" fill="#D17D2E"/></g></svg>
+
+h2.section__title.section__title--white
+  | What the Maximum Loan Payout Looks Like in Every State
+
+.loan__content
+  p.loan__text
+    | Maximum legal interest rates vary pretty drastically, from the five percent lows in states like Iowa and Wisconsin to the 21 percent highs in Indiana and Rhode Island. This difference, just 16 percent, might now seem like a lot, but compounding is no joke and consumer loans can get pretty large. A consumer looking for an auto loan is looking in the five figure range and a mortgage can run to six or seven. We looked at what the payout would be in each state with a $25,000 loan over a ten year payout window with each state’s maximum legal interest rate to show just how much of a difference these laws can make.
+
+  p.loan__text.loan__text--colored.loan__text--title
+    | Tap the coins for full data of each state:
+
+  p.loan__text.loan__text--colored.loan__text--info
+    | Percent means Maximum Legal Interest Rate, $ means Maximum Payout
+
+  .loan__rates
+    for loanValue in loanValues
+      .loan__rate
+        .loan__rate-tooltip
+          p.loan__rate-tooltip-interest
+            = loanValue.interestRate
+
+          p.loan__rate-tooltip-payout
+            = loanValue.payout
+
+        p.loan__rate-state
+          = loanValue.state
+
+        svg.loan__coins(width="32" height=loanValue.coins * 6 + 13)
+          - for (var i = 0; i < loanValue.coins; i++) {
+            - var coord = 6 * loanValue.coins - (i * 6)
+            <use class="loan__coins-img" y = #{coord} xlink:href="#coin"/>
+          - }
+
+        p.loan__rate-rank
+          = loanValue.rank

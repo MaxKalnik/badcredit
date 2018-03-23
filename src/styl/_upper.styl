@@ -1,0 +1,50 @@
+.upper__content
+  position: relative
+
+.upper__pic
+  position: absolute
+  top: 20px
+
+  +respond-to($xsmall)
+    position: static
+    display: flex
+    justify-content: center
+    margin: 0 auto 30px auto
+
+.upper__text-under-title
+  @extend .under-title
+  margin-left: 150px
+
+  +respond-to($xsmall)
+    font-size: 16px
+    margin-left: 0
+
+.upper__text-under-title--last
+  +respond-to($small)
+    margin-left: 0
+
+.upper__text-main
+  @extend .main-text
+  margin-bottom: 24px
+
+.upper-info__list
+  margin: 16px 0
+  margin-left: 29px
+  +respond-to($xsmall)
+    margin-left: 0
+
+.upper-info__item-text
+  @extend .main-text
+
+.upper-info__item
+  position: relative
+  padding-left: 18px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 10px
+    width: 6px
+    height: 6px
+    background: url('images/svg/list-bullet.svg') center no-repeat
+    background-size: cover

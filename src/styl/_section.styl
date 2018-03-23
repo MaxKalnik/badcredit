@@ -1,0 +1,173 @@
+.section
+  padding: 64px 45px
+  background-color: $color-white
+  margin-bottom: 10px
+
+  +respond-from($large)
+    padding: 64px 60px
+
+  +respond-to($medium)
+    padding: 45px
+
+  +respond-to($small)
+    padding: 45px 25px
+
+  +respond-to($xsmall)
+    padding: 30px 12px
+
+.section--upper
+  position: relative
+  padding-top: 45px
+  padding-left: 37px
+
+  +respond-from($large)
+    position: relative
+    padding: 45px 60px 64px 60px
+
+  +respond-to($medium)
+    padding: 45px
+
+  +respond-to($small)
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 45px 25px
+
+  +respond-to($xsmall)
+    justify-content: center
+    padding: 25px 12px 42px 12px
+
+    .under-title
+      font-size: 15px
+      line-height: 28px
+      font-weight: 200
+
+.section--wide
+  padding-top: 0
+  padding-left: 0
+  padding-right: 0
+
+.section__title
+  font-size: 32px
+  line-height: 40px
+  margin-bottom: 30px
+  color: #103144
+  text-align: center
+  font-weight: 600
+
+  +respond-to($small)
+    margin-bottom: 30px
+
+  +respond-to($xsmall)
+    font-size 26px
+    line-height: 34px
+
+.section--methodology
+  border-radius: 0 0 5px 5px
+
+.section__title--white
+  color: #ffffff
+  padding: 0 25px
+  +respond-to($xsmall)
+    padding: 0 12px
+
+.section__title.section__title--table
+  margin-bottom: 12px
+
+.section__under-title
+  @extend .main-text
+  margin: 0 45px
+  text-align: center
+  margin-bottom: 32px
+
+  +respond-from($large)
+    margin: 0 60px 32px 60px
+
+  +respond-to($small)
+    margin: 0 25px 32px 25px
+
+  +respond-to($xsmall)
+    margin: 0 12px 32px 12px
+
+.section__title--close
+  margin-bottom: 12px
+
+.section__under-title--white
+  color: #ffffff
+
+.section--loan
+  background-image: linear-gradient(-180deg, #094085 0%, #011B4E 99%)
+
+.section__upper
+  position: relative
+  width: 100%
+  height: 570px
+  margin-bottom: 45px
+
+.section__upper--best-states
+  background: url(images/photo/states-best.png) center no-repeat
+  @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+    background: url(images/photo/states-best@2x.png) center no-repeat
+    background-size: cover
+
+  +respond-from($large)
+    background: url(images/photo/states-best-1920.png) center no-repeat
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url(images/photo/states-best-1920@2x.png) center no-repeat
+      background-size: cover
+
+  +respond-to($small)
+    background: url(images/photo/states-best-1020.png) center no-repeat
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url(images/photo/states-best-1020@2x.png) center no-repeat
+      background-size: cover
+
+  +respond-to($xsmall)
+    background: url(images/photo/states-best-780.png) center no-repeat
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url(images/photo/states-best-780@2x.png) center no-repeat
+      background-size: cover
+
+  +respond-to($xxsmall)
+    background: url(images/photo/states-best-320.png) center no-repeat
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url(images/photo/states-best-320@2x.png) center no-repeat
+      background-size: cover
+
+.section__upper--worst-states
+  background: url(images/photo/states-worst.png) center no-repeat
+  @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+    background: url(images/photo/states-worst@2x.png) center no-repeat
+    background-size: cover
+
+  +respond-from($large)
+    background: url(images/photo/states-worst-1920.png) center no-repeat
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url(images/photo/states-worst-1920@2x.png) center no-repeat
+      background-size: cover
+
+  +respond-to($small)
+    background: url(images/photo/states-worst-1020.png) center no-repeat
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url(images/photo/states-worst-1020@2x.png) center no-repeat
+      background-size: cover
+
+  +respond-to($xsmall)
+    background: url(images/photo/states-worst-780.png) center no-repeat
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url(images/photo/states-worst-780@2x.png) center no-repeat
+      background-size: cover
+
+  +respond-to($xxsmall)
+    background: url(images/photo/states-worst-320.png) center no-repeat
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url(images/photo/states-worst-320@2x.png) center no-repeat
+      background-size: cover
+
+.section__upper-text
+  position: absolute
+  width: 100%
+  top: 45px
+  left: 50%
+  transform: translate(-50%)

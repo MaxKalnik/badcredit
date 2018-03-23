@@ -1,0 +1,216 @@
+@import "virtual/_variable.styl"
+
+body
+  font-family: Whitney SSm A, sans-serif
+  $ultraThin()
+  color: #0A0C0D
+
+ul,li
+  list-style: none
+  padding: 0
+  margin: 0
+
+.content
+  width: 1220px
+  margin: 0 auto
+  position relative
+
+  +respond-from($large)
+    width: 1360px
+
+  +respond-to($medium)
+    width: 980px
+
+  +respond-to($small)
+    width: auto
+    max-width: 740px
+
+  +respond-to($xsmall)
+    margin-left: 10px
+    margin-right: 10px
+
+.main-article
+  padding-top: 32px
+
+.page__wrap
+  background-image: url(images/footer_bg.png), url(images/svg/clouds_bg.svg), url(images/svg/clouds_bg.svg), linear-gradient(-180deg, #34C4F0 0%, #1C90E2 100%)
+  background-position 50% 100%, 0 250px, 600px 50%
+  background-repeat no-repeat, repeat-x, repeat-x
+  background-size: auto, auto, auto
+
+  +respond-from($large)
+    background-image url(images/footer_bg.png), url(images/svg/clouds_bg.svg) , none, linear-gradient(-180deg, #34c4f0 0, #1c90e2 100%)
+
+.under-title__text
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  margin-bottom: 24px
+
+.under-title
+  color: #0A0C0D
+  font-size: 18px
+  line-height: 32px
+  font-weight: 200
+  margin-bottom: 24px
+  &:last-child
+    margin-bottom: 0
+
+.footer-menu__link, .button-main, .button-register, .rate-block
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-smoothing: grayscale
+
+.mobile-only-close
+  display: none
+
+.mobile-only-show
+  display: none
+
+.mobile-only-close
+  display: none
+  font-style: normal
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: #e589a8
+  text-decoration: none
+  height: 41px
+  text-transform: uppercase
+  border-radius: 3px
+  padding: 0 20px
+  overflow: hidden
+  font-size: 11px
+  line-height: 43px
+  font-weight bold
+  position: fixed
+  background: #ffffff
+  -webkit-backface-visibility: hidden
+  top: 10px
+  right: 25px
+  border: 1px solid #e589a8
+  .icon
+    margin-right: 8px
+  &:hover
+    border: 1px solid transparent
+    background: #f8dce5
+    transition: .25s
+
+.frame-wrapper
+  position:relative
+  padding-bottom:50%
+  padding-top:30px
+  height:0
+  overflow:hidden
+
+  +respond-from($large)
+    padding-bottom: 48%
+
+  +respond-to($medium)
+    padding-bottom: 55%
+
+  +respond-to($small)
+    padding-bottom: 65%
+
+  +respond-to($xsmall)
+    padding-bottom: 69%
+
+  +respond-to(567px)
+    padding-bottom: 66%
+
+.frame-wrapper--g-map
+  padding-bottom:67%
+
+  +respond-to($medium)
+    padding-bottom: 81%
+
+  +respond-to($small)
+    padding-bottom: 85%
+
+  +respond-to($xsmall)
+    padding-bottom: 80%
+
+  +respond-to(567px)
+    padding-bottom: 92%
+
+.frame-wrapper iframe
+  position:absolute
+  top:0
+  left:0
+  width:100%
+  height:100%
+
++respond-to($xsmall)
+  .mobile-table
+    width: 100%
+    margin-bottom: 16px
+
+  .mobile-only-show
+    display: block
+
+  .only_mob-crop
+    width: 100px
+    overflow: hidden
+    white-space: nowrap
+    display: inherit
+    text-overflow: ellipsis
+    vertical-align: top
+
+  .mobile-table
+    width: 100%
+    margin-bottom: 16px
+
+  .mobile-only-close
+    display: none
+    font-style: normal
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    text-align: center
+    color: #e589a8
+    text-decoration: none
+    height: 41px
+    text-transform: uppercase
+    border-radius: 3px
+    padding: 0 20px
+    overflow: hidden
+    font-size: 11px
+    line-height: 43px
+    font-weight bold
+    position: fixed
+    background: #ffffff
+    -webkit-backface-visibility: hidden
+    top: 10px
+    right: 25px
+    border: 1px solid #e589a8
+    .icon
+      margin-right: 8px
+    &:hover
+      border: 1px solid transparent
+      background: #f8dce5
+      transition: .25s
+
+  .map-container.show
+    padding-top: 20px
+    padding-bottom: 20px
+    .mobile-only-show
+      display: none
+    .mobile-only-close
+      width: 80px
+      display: block
+      position: fixed
+      top: 10px
+      right: 25px
+    .map-info
+      padding-left: 24px
+    .map-info__text-item
+      margin-bottom: 0
+    .map-img__wrapper
+      align-items: flex-start
+      overflow-x: scroll
+    .map-img
+      display: none
+    .map-img--big
+      display: block
+
+  .map-container__zoom
+    display: none

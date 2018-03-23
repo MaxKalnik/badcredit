@@ -1,0 +1,83 @@
+include ./table-data
+
+.section.section--table.section--g-table
+  .breadcrumbs__wrap
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | Home
+
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | Reports
+
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | The Best and Worst States to Live in with Bad Credit
+
+    .breadcrumbs__item
+      | Full Ranking
+
+  h2.section__title.section__title--table
+    | Full Ranking
+
+  .ranking-table__container
+    .ranking-table__hint
+      .ranking-table__hint-close-btn
+      p.ranking-table__hint-text
+        | By default cities are sorted
+        br
+        | by alphabet. 
+        span.semibold
+          | You could sort by other parameter.
+
+    .mobile-only
+      table.ranking-table.ranking-table--fixed
+        thead
+          tr
+            th State
+
+        tbody
+          each value in values
+            tr
+              td
+                = value.state
+
+    .ranking-table__wrapper
+      table.ranking-table.ranking-table--data
+        thead
+          tr
+            th(class='table-sort' data-index='0') State
+            th(class='table-sort' data-index='1') RewardExpert Ranking
+            th(class='table-sort' data-index='2') CFPB Complaints Per Capita
+            th(class='table-sort' data-index='3') Average Household Income
+            th(class='table-sort' data-index='4') Maximum Legal Usury Rate
+            th(class='table-sort' data-index='5') Number of Debt Collection Agencies
+            th(class='table-sort' data-index='6') Cost of Living Index
+
+        tbody
+          each value in values
+            tr
+              td
+                = value.state
+
+              td
+                = value.reRanking
+
+              td
+                = value.cfpb
+
+              td
+                = value.avIncome
+
+              td
+                = value.usuryRate
+
+              td
+                = value.agencies
+
+              td
+                = value.livingIndex
+
+  .btn-container.btn-container--under-table
+    a.btn-go-back(href="index.html")
+      | GO BACK TO THE FULL REPORT

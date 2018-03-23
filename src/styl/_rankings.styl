@@ -1,0 +1,117 @@
+.rankings__intro
+  position: relative
+
+.rankings__item
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 45px
+  &:last-child
+    margin-bottom: 0
+
+  +respond-to($xsmall)
+    display: flex
+    flex-direction: column
+    margin-bottom: 32px
+    padding-top: 80px
+    &:last-child
+      margin-bottom: 0
+
+.rankings__item-title
+  font-size: 24px
+  line-height: 32px
+  font-weight: 600
+  margin-bottom: 16px
+  color: #0a3a82
+  margin-left: 83px
+
+  +respond-to($xsmall)
+    text-align: center
+    margin-left: 0
+
+.rankings__item-content
+  display: flex
+  flex-direction: row
+
+.rankings__wrapper
+  width: 800px
+  margin: 0 auto
+
+  +respond-from($large)
+    width: 1000px
+
+  +respond-to($small)
+    width: 690px
+
+  +respond-to($xsmall)
+    width: calc(100% - 24px)
+
+.rankings__item-num-block
+  width: 67px
+  margin-right: 16px
+
+  +respond-to($xsmall)
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%)
+    width: auto
+    margin: 0 auto 16px auto
+
+.rankings__item-num
+  font-size: 60px
+  line-height: 64px
+  font-weight: 700
+  text-align: right
+  color: $color-blue
+
+  +respond-from($large)
+    font-size: 64px
+    line-height: 68px
+
+.rankings__item-text
+  width: $rankings_item-table-width
+  @extend .main-text
+
+  +respond-from($large)
+    width: $rankings_item-table-width-large
+
+  +respond-to($small)
+    width: $rankings_item-table-tab-width
+
+  +respond-to($xsmall)
+    width: 100%
+    order: 3
+
+.rankings__wrapper--red
+  .rankings__item-num
+    color: $color-red
+
+  .rankings__item-title
+    color: #f02e2d
+
+.rankings__item-table-text
+  font-size: 10px
+  line-height: 14px
+  font-weight: 700
+  color: #848586
+  text-transform: uppercase
+  margin-right: 14px
+
+  +respond-to($xsmall)
+    width: 70px
+
+.rankings__item-table-text--runner-up
+  min-width: 72px
+
+  +respond-to($small)
+    min-width: 65px
+
+  +respond-to($xsmall)
+    min-width: auto
+
+.rankings__item-table-value
+  font-size: 10px
+  line-height: 14px
+  font-weight: 700
+  text-transform: uppercase

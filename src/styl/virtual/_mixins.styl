@@ -1,0 +1,25 @@
+$xxsmall = 321px
+$xsmall = 780px
+$small = 1020px
+$medium = 1440px
+$large = 1850px
+
+respond-to($media)
+  @media only screen and (max-width: $media - 1px)
+    {block}
+
+respond-from($media)
+  @media only screen and (min-width: $media)
+    {block}
+
+respond-between($media-min, $media-max)
+  @media only screen and (min-width: $media-min) and (max-width: $media-max - 1px)
+    {block}
+
+respond-to-retina
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
+    {block}
+
+respond-to-retina-one
+  @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+    {block}

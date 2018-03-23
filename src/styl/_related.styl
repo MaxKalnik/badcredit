@@ -1,0 +1,106 @@
+.related
+  background: #FFFFFF
+  border-radius: 5px
+  margin-top: 30px
+  margin-bottom: 200px
+
+  +respond-to($xsmall)
+    margin-top: 17px
+
+.related-head
+  min-height 54px
+  display flex
+  justify-content space-between
+  align-items center
+  background: #F0FAFF
+  box-shadow: 0 1px 0 0 #DCEFF5
+  border-radius: 5px 5px 0 0
+  padding: 0 31px
+
+  +respond-to(1849px)
+    padding: 0 25px
+
+  +respond-to($medium)
+    padding: 0 20px
+
+.related-title
+  font-size: 12px
+  color: #0084C3
+  letter-spacing: 0
+  text-transform uppercase
+  font-weight 600
+  letter-spacing -.1px
+
+.related-list
+  padding: 34px 31px 0px 31px
+  display flex
+  justify-content space-between
+  .col
+    width: 43%
+    padding-right: 5%
+
+    +respond-to($medium)
+      width: 49%
+
+    +respond-to($small)
+      width: 46%
+
+    +respond-to($xsmall)
+      width: 100%
+
+  +respond-to(1849px)
+    padding: 34px 25px 0
+
+  +respond-to($medium)
+    padding-left: 32px
+
+  +respond-to($small)
+    padding-left: 21px
+
+  +respond-to($xsmall)
+    padding-top: 19px
+    padding-left: 17px
+    flex-direction column
+
+.related-item
+  padding-bottom: 30px
+
+  +respond-to($xsmall)
+    padding-bottom: 22px
+
+.related-item__title
+  font-size: 14px
+  color: #475359
+  letter-spacing: -0.2px
+  line-height: 20px
+  font-weight 600
+  padding-bottom: 12px
+
+.related-item__text
+  padding-bottom: 13px
+  line-height 24px
+  font-size: 14px
+  color: #475359
+  letter-spacing: -0.1px
+  font-weight 300
+
+.related-item__link
+  letter-spacing: -0.2px
+  font-weight 300
+  font-size: 14px
+  line-height 24px
+  color: #0DA4F0
+  border-bottom: 1px solid rgba(13, 164, 240, 0.30)
+  padding-bottom: 2px
+
+  +respond-to($xsmall)
+    line-height 27px
+
+  &:after
+    width: 100%
+    display: block
+    content ''
+    margin-bottom: 3px
+
+  &:hover
+    border-bottom-color: rgba(13, 164, 239, 0.0)

@@ -1,0 +1,99 @@
+.main-link
+  color: #0DA4F0
+  border-bottom  1px solid rgba(30, 146, 204, 0.2)
+  cursor: pointer
+  &:hover
+    border-bottom: none
+
+.main-text
+  color: #0A0C0D
+  font-size: 14px
+  line-height: 26px
+  font-weight: 300
+  margin-bottom: 24px
+  &:last-child
+    margin-bottom: 0
+
+  +respond-to($xsmall)
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+
+  a
+    @extend .main-link
+
+.main-text--semibold
+  font-weight: 600
+
+.main-text--italic
+  font-style: italic
+
+.semibold
+  font-weight: 600
+
+.reg
+  font-weight 600
+  font-size: 10px
+  color: #95A69D
+  letter-spacing: 0
+  line-height: 10px
+  position: relative
+  top: -2px
+  color: $color-white
+
+.info-text
+  position: relative
+  margin: 0 auto
+  padding: 23px 45px 25px 72px
+  font-size: 14px
+  line-height: 26px
+  font-weight: 300
+  font-style: italic
+  border-radius: 5px
+  box-sizing: border-box
+  border: 1px solid #ccd8e7
+  &:before
+    content: ''
+    position: absolute
+    height: 32px
+    width: 32px
+    top: 50%
+    transform: translateY(-50%)
+    left: 24px
+    background: url(images/icons/info-icon.svg) center no-repeat
+    background-size: cover
+
+  +respond-to($small)
+    width: 690px
+    &:before
+      width: 24px
+      height: 24px
+
+  +respond-to($xsmall)
+    width: calc(100% - 24px)
+    padding: 10px
+    padding-top: 16px
+    font-size: 12px
+    &:before
+      left: 50%
+      top: -13px
+      transform: translateX(-50%)
+
+.rate-block
+  position: relative
+  min-width: 48px
+  background: #2137B2
+  border-radius: 3px
+  font-size: 14px
+  color: #fff
+  letter-spacing: 0
+  font-weight: 600
+  line-height: 16px
+  height: 29px
+  padding: 6px 8px 2px 8px
+  display: inline-block
+  position: relative
+  vertical-align: text-bottom
+  overflow hidden
+  box-sizing border-box
+  flex-shrink: 0
