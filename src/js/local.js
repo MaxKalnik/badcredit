@@ -29,6 +29,22 @@ $(document).ready(function () {
         $(this).css('display', 'none');
     });
 
+    $('.loan__coins').swipe({
+        tap: function(event, target) {
+            $('.loan__rate').removeClass('loan__rate--with-tooltip');
+            $(this).parents('.loan__rate').addClass('loan__rate--with-tooltip');
+        }
+    });
+
+    $('body').swipe({
+        tap: function(event, target) {
+            var current = $('.loan__rate--with-tooltip')
+            if(!current.is(event.target) && current.has(event.target).length === 0) {
+                $('.loan__rate').removeClass('loan__rate--with-tooltip');
+            }
+        }
+    });
+
     if($(window).width() < 1020) {
         body.on('click', '.loan__coins', function () {
             $('.loan__rate').removeClass('loan__rate--with-tooltip');
