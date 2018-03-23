@@ -17,6 +17,7 @@ $(document).ready(function () {
     });
 
     body.on('mouseover', '.loan__coins', function () {
+        $('.loan__rate').removeClass('loan__rate--with-tooltip');
         $(this).siblings('.loan__rate-tooltip').addClass('loan__rate-tooltip--visible');
     });
 
@@ -28,6 +29,19 @@ $(document).ready(function () {
         $(this).css('display', 'none');
     });
 
+    if($(window).width() < 1020) {
+        body.on('click', '.loan__coins', function () {
+            $('.loan__rate').removeClass('loan__rate--with-tooltip');
+            $(this).parents('.loan__rate').addClass('loan__rate--with-tooltip');
+        });
+
+        body.on('mouseup', function (evt) {
+            var current = $('.loan__rate--with-tooltip')
+            if(!current.is(evt.target) && current.has(evt.target).length === 0) {
+                $('.loan__rate').removeClass('loan__rate--with-tooltip');
+            }
+        });
+    }
 
     body.on('click', '.table-sort', function () {
         var $rows = $('.ranking-table--data tr').splice(1);

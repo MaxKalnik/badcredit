@@ -29,6 +29,24 @@
     text-align: center
     margin-left: 0
 
+.rankings__item-title-link
+  display: inline-block
+  position: relative
+  color: inherit
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 2px
+    bottom: 0
+    left: 0
+    background-color: $color-blue
+    transition: .2s ease-out
+
+  &:hover
+    &:after
+      background-color: transparent
+
 .rankings__item-content
   display: flex
   flex-direction: row
@@ -89,6 +107,14 @@
 
   .rankings__item-title
     color: #f02e2d
+
+  .rankings__item-title-link
+    &:after
+      background-color: $color-red
+
+    &:hover
+      &:after
+        background-color: transparent
 
 .rankings__item-table-text
   font-size: 10px

@@ -5,15 +5,59 @@
   height: 0
 
 .loan__content
+  position: relative
   padding: 32px
   background-image: linear-gradient(-180deg, #05307C 0%, #011953 100%)
   border: 1px solid desaturate($color-red, 60%)
   border-radius: 5px
 
+  +respond-to($small)
+    padding: 24px
+
+  +respond-to($xsmall)
+    background: transparent
+    padding: 0
+    border: none
+
+.loan__hand
+  position: absolute
+  top: 0
+  right: 68px
+
+  +respond-to($small)
+    right: 40px
+
+  +respond-to($xsmall)
+    position: static
+    display: flex
+    justify-content: center
+    border-top: 1px solid $color-red
+    margin-bottom: 24px
+
+.loan__hand-img
+  +respond-to($medium)
+    width: 168px
+    height: 122px
+
+  +respond-to($xsmall)
+    width: 240px
+    height: 175px
+
 .loan__text
   @extend .main-text
   color: $color-white
   margin-bottom: 24px
+
+.loan__text--upper
+  margin-right: 373px
+  +respond-to($medium)
+    margin-right: 263px
+
+  +respond-to($small)
+    margin-right: 223px
+
+  +respond-to($xsmall)
+    margin-right: 0
 
 .loan__text--colored
   color: $color-red
@@ -34,17 +78,21 @@
   align-items: flex-end
   flex-wrap: wrap
   opacity: 0
-  transition: opacity 1.35s ease-in
+  transition: opacity 1s ease-in
+  +respond-to($xsmall)
+    padding: 0 8px
 
 .loan__rate-tooltip
-  visibility: hidden
   position: absolute
   top: 0
-  left: 15px
+  left: 9px
   padding: 1px
   background: $color-red
   border-radius: 4px
   margin-bottom: 27px
+  opacity: 0
+  transition: opacity .3s ease-out
+  z-index: 1
   &:after
     position: absolute
     content: ''
@@ -58,10 +106,14 @@
     border-top: 6px solid $color-red
 
   +respond-to($xsmall)
-    left: 9px
+    left: 7px
+
+.loan__rate--with-tooltip
+  .loan__rate-tooltip
+    opacity: 1
 
 .loan__rate-tooltip--visible
-  visibility: visible
+  opacity: 1
 
 .loan__rate-tooltip-interest
   background: $color-white
@@ -70,6 +122,7 @@
   line-height: 18px
   font-weight: 600
   text-align: center
+  padding: 5px 4px 3px 4px
 
 .loan__rate-tooltip-payout
   color: #f02e2d
@@ -77,6 +130,7 @@
   line-height: 13px
   font-weight: 600
   text-align: center
+  padding: 6px
 
 .loan__coins
   display: flex
@@ -86,28 +140,31 @@
   width: 49px
   position: relative
   padding-left: 19px
-  padding-top: 60px
+  padding-top: 65px
   box-sizing: border-box
   margin-right: 14px
   opacity: 1
-  transition: opacity 1.3s
+  transition: opacity .7s
+
+  +respond-from($large)
+    margin-right: 16px
 
   +respond-between($medium, $large)
     &:nth-child(17n)
       margin-right: 0
 
   +respond-between($small, $medium)
+    margin-right: 15px
     &:nth-child(13n)
       margin-right: 0
 
   +respond-between($xsmall, $small)
-    width: 42px
+    width: 45px
     &:nth-child(11n)
       margin-right: 0
 
-  +respond-to($xsmall)
-    width: 42px
-    padding-left: 13px
+  +respond-between($xxsmall-iphone, $xsmall)
+    margin-right: 10px
 
   +respond-to($xxsmall)
     &:nth-child(4n)
@@ -124,8 +181,6 @@
   line-height: 13px
   text-transform: uppercase
   font-weight: 600
-  +respond-to($xsmall)
-    left: -45px
 
 .loan__coins-img
   transition: .5s
