@@ -79,8 +79,22 @@
   flex-wrap: wrap
   opacity: 0
   transition: opacity 1s ease-in
-  +respond-to($xsmall)
-    padding: 0 8px
+
+  +respond-between($xxsmall-iphone-landscape, $xsmall)
+    width: 472px
+    margin: 0 auto
+
+  +respond-between($xxsmall-iphone, $xxsmall-iphone-landscape)
+    width: 360px
+    margin: 0 auto
+
+  +respond-between($xxsmall, $xxsmall-iphone)
+    width: 315px
+    margin: 0 auto
+
+  +respond-to($xxsmall)
+    width: 255px
+    margin: 0 auto
 
 .loan__rate-tooltip
   position: absolute
@@ -163,7 +177,10 @@
     &:nth-child(11n)
       margin-right: 0
 
-  +respond-between($xxsmall-iphone, $xsmall)
+  +respond-between($xxsmall-iphone-landscape, $xsmall)
+    margin-right: 18px
+
+  +respond-between($xxsmall-iphone, $xxsmall-iphone-landscape)
     margin-right: 10px
 
   +respond-to($xxsmall)
