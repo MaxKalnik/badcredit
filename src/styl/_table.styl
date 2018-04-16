@@ -7,7 +7,7 @@
 .ranking-table__hint
   position: absolute
   top: -75px
-  left: 16%
+  left: 42px
   width: 204px
   box-sizing: border-box
   padding: 12px
@@ -27,6 +27,15 @@
     border-left: 7px solid transparent
     border-right: 7px solid transparent
     border-top: 7px solid $color-white
+
+  +respond-from($large)
+    left: 58px
+
+  +respond-to($medium)
+    left: 8px
+
+  +respond-to($small)
+    left: -7px
 
 .ranking-table__hint-close-btn
   position: absolute
