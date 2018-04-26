@@ -36,7 +36,7 @@ $(document).ready(function () {
         }
     });
 
-    $('body').swipe({
+    $('.loan__rates').swipe({
         tap: function(event, target) {
             var current = $('.loan__rate--with-tooltip')
             if(!current.is(event.target) && current.has(event.target).length === 0) {
